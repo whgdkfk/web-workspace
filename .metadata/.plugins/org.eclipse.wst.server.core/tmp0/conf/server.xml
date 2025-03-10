@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\workspace\web-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\workspace\web-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BurgerKingProject" path="/bk" reloadable="true" source="org.eclipse.jst.jee.server:BurgerKingProject"/></Host>
+      <Context docBase="C:\workspace\web-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\workspace\web-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BurgerKingProject" path="/bk" reloadable="true" source="org.eclipse.jst.jee.server:BurgerKingProject"/><Context docBase="C:\workspace\web-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\McDonaldProject" path="/bm" reloadable="true" source="org.eclipse.jst.jee.server:McDonaldProject"/></Host>
     </Engine>
   </Service>
 </Server>
