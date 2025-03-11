@@ -52,7 +52,7 @@ public class SignUpController extends HttpServlet {
 		// 비즈니스 로직 & 프레젠테이션 로직 분리
 		// JSP를 이용해서 응답 데이터 만들기
 		
-		// JSP: Java 기반의 서버 사이드 스크립트 언어
+		// JSP: Java 기반의 서버 사이드 스크립트 언어 
 		// ASP, PHP 
 		
 		// ---------------------------------------------------
