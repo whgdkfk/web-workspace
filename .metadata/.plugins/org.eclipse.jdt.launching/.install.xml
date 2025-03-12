@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-    <entry loc="C:\tools\jdk21.0.5_11" stamp="1728649358000"/>
+    <entry loc="C:\tools\jdk21.0.5_11" stamp="1741732255079"/>
+    <entry loc="C:\Program Files\Amazon Corretto\jdk21.0.6_7" stamp="1741738890440"/>
     <entry loc="C:\tools\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre" stamp="1732754114000"/>
     <entry loc="C:\tools\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957" stamp="1732754114000"/>
 </dirs>
