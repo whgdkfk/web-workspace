@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/Users/joara/workspace/web-workspace/.metadata/.plugins/org.eclipse.jdt.core
-2045884214.index
-2541093970.index
-1865797976.index
