@@ -1,3 +1,7 @@
-INDEX VERSION 1.4+C:\workspace\web-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3029880184.index
-2242026751.index
+INDEX VERSION 1.4+/Users/joara/workspace/web-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2882502964.index
+1381757864.index
+1066740243.index
+1372050432.index
+1632804758.index
+2541093970.index

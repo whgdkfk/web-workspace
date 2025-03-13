@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
     <libraryInfo home="C:\tools\jdk21.0.5_11" version="21.0.5"/>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/amazon-corretto-21.jdk/Contents/Home" version="21.0.6"/>
     <libraryInfo home="C:\tools\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre" version="21.0.5"/>
     <libraryInfo home="C:\tools\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957" version="21.0.5">
         <bootpath>
