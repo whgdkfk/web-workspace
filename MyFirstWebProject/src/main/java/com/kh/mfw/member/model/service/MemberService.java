@@ -22,7 +22,20 @@ public class MemberService {
 		// DAO가 메모리에 올라감
 		MemberDTO loginMember = new MemberDAO().login(member);
 		return loginMember;
+	}
+	
+	// 하나의 DAO 메서드는 하나의 SQL문만 수행한다.
+	// → Service에서 수행
+	public int signUp(MemberDTO member) {
+		// DAO 객체 생성하여 checkId 메서드 호출
+		int result = new MemberDAO().checkId(member.getMemberId());
 		
+		// 0: 조회 결과가 없음, 1: 조회 결과 있음
+		if(result > 0) {
+			return result;
+		}
 		
+		new MemberDAO().signUp(member);
+		return result;
 	}
 }
