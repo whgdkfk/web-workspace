@@ -48,7 +48,7 @@ public class UserDAO {
 										, USER_NAME
 										, ENROLL_DATE
 							  FROM
-							  			  KH_USER
+							  			  TB_USER
 							WHERE
 										  USER_ID = ?
 								 AND
