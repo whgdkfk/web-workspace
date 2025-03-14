@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.kh.mfw.member.model.dto.MemberDTO;
 import com.kh.mfw.member.model.service.MemberService;
@@ -55,9 +56,18 @@ public class SignUpController extends HttpServlet {
 			path = request.getContextPath();
 		}
 		*/
+		// "중복된 아이디가 존재합니다. 다른 아이디를 입력해주세요." => 문자열 값 화면 출력(alert 이용)
+		// String msg = "중복된 아이디가 존재합니다. 다른 아이디를 입력해주세요.";
+		// System.out.println(msg);
+		// request.setAttribute("message", "중복된 아이디가 존재합니다. 다른 아이디를 입력해주세요.");
+		if(result == 0) {
+			request.getSession().setAttribute("message", "중복된 아이디가 존재합니다. 다른 아이디를 입력해주세요.");
+		} 
 		// response.sendRedirect(path);
 		response.sendRedirect(result != 0 ? path + "/join" : path);
 		
+		// 변수의 가장 큰 목적은?
+		// 값의 재활용
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

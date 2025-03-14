@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper 클래스
+	 SQL 쿼리와 자바 메서드를 연결하는 중요한 역할
+	 Mapper 인터페이스는 SQL 쿼리 메서드를 정의하고, 
+	 이 메서드는 XML 파일의 SQL 구문과 매핑됩니다.
+	 MyBatis는 SqlSession을 통해 이러한 매핑된 메서드를 호출하고, 
+	 SQL 쿼리를 실행하여 결과를 반환합니다.
+ -->	 
+<!-- namespace: 해당 mapper만을 식별하기 위한 고유한 별칭 -->
+<mapper namespace="memberMapper">
+
+	<!--  
+		[select]
+		앞에서는 JDBC 객체를 사용해서 영속성 작업을 하기 위해서
+		pstmt 객체에 sql문을 전달하여 placeholder를 코드 상에서 채워줬지만
+		Mybatis를 이용하면 placeholder 대신 
+		해당 SQL문에 전달된 객체로부터 값을 꺼내서 사용한다.
+
+		<select id="각 SQL문의 식별자"
+				parameterType="SQL문을 실행할 때 필요한 자바타입(풀클래스명) 혹은 별칭" (생략 가능)
+				resultType="조회 결과를 반환하는 자바타입"
+				또는
+				resultMap="조회 결과를 뽑아서 매핑할 resultMap의 id">
+			SELECT문(조회해서 반환해줌 → resultType, resultMap 필요)
+		</select>
+	-->
+	<!-- parameterType: 쿼리에서 사용할 파라미터의 타입을 정의하는 속성 -->
+	<!-- Full Class Name: 패키지 경로부터 클래스 식별자까지 -->
+	<select id="login" 
+			parameterType="com.kh.mfw.member.model.dto.MemberDTO"
+			resultType="com.kh.mfw.member.model.dto.MemberDTO">
+		SELECT 
+		   <!-- Auto Mapping: 컬럼명을 필드명과 똑같이 써주는 것(별칭)만으로 자동으로 필드에 대입해줌 -->
+				MEMBER_ID memberId
+			  , MEMBER_PW memberPw
+			  , MEMBER_NAME memberName
+			  , EMAIL 
+			  , ENROLL_DATE enrollDate
+		  FROM
+		  	    KH_MEMBER
+		 WHERE 
+		   <!-- MEMBER_ID = ? -->
+		 		MEMBER_ID = #{ memberId }
+		   AND 
+		   <!-- MEMBER_PW = ? -->
+		   		MEMBER_PW = #{ memberPw }
+		   		
+	<!-- #{ 필드명 } → getter 메소드 호출
+		 pstmt.setString(1, member.getMemberId());
+		 pstmt.setString(2, member.getMemberPw()); 
+		 MEMBER_ID = #{ memberId }
+		 MEMBER_PW = #{ memberPw }로 대체
+	  --> 		
+	</select>  
+	
+	<select id="checkId"
+			parameterType="string"
+			resultType="memberDTO">
+		SELECT
+				COUNT(*)
+		  FROM
+		  		KH_MEMBER
+		 WHERE
+		 		MEMBER_ID = #{ memberId }
+	</select>
+	
+	<insert id="signUp"
+			parameterType="memberDTO">
+		INSERT
+		  INTO
+		  		KH_MEMBER
+		VALUES
+				(
+				#{ memberId }
+			  , #{ memberPw }
+			  , #{ memberName }
+			  , #{ email }
+			  , DEFAULT
+			  	)
+	</insert>
+</mapper>

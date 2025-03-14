@@ -4,19 +4,24 @@
     <fullyQualifiedTypeName name="com.kh.burgerking.model.dto.UserDTO"/>
     <fullyQualifiedTypeName name="com.kh.mcdonald.model.dto.Hamburger"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.kh.mcdonald.model.dao.UserDAO"/>
     <fullyQualifiedTypeName name="com.kh.mcdonald.model.service.UserService"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.kh.mcdonald.model.dto.UserDTO"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="com.kh.mfw.member.model.service.MemberService"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="com.kh.mfw.member.model.dao.MemberDAO"/>
-    <fullyQualifiedTypeName name="com.kh.mfw.member.model.dto.MemberDTO"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.kh.mfw.member.model.dto.MemberDTO"/>
+    <fullyQualifiedTypeName name="com.kh.mfw.member.model.service.MemberService"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
+    <fullyQualifiedTypeName name="com.kh.mfw.common.Template"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 </qualifiedTypeNameHistroy>
