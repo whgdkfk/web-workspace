@@ -1,5 +1,6 @@
 package com.kh.mfw.member.model.dao;
 
+import org.apache.ibatis.reflection.SystemMetaObject;
 import org.apache.ibatis.session.SqlSession;
 
 import com.kh.mfw.member.model.dto.MemberDTO;
@@ -62,6 +63,7 @@ public class MemberDAO {
 			return false;
 		}
 		*/
+
 		return (Integer)sqlSession.selectOne("memberMapper.checkId", memberId) > 0 ? true : false;
 	}
 	

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>눌렀음</title>
+<title>index.html에서 주문하기 버튼 누르면 나오는 페이지</title>
 <style>
 	body {
 		padding: 250px;
@@ -10,6 +10,11 @@
 </style>
 </head>
 <body>
+	<!-- 
+			정적자원: 웹 브라우저가 늘 같은 응답 데이터를 받아서 화면에 출력하는 URL에 해당하는 자원(ex. 이미지 파일, HTML, javascript 등) 
+			동적자원: 파일을 바꾸지 않아도 조건에 따라 다른 응답 데이터를 전송하는 URL에 해당하는 자원
+						  시간이나 특정 조건(ex. SNS의 시간에 따른 데이터, 쿼리 문자열)에 따라 응답 데이터가 달라지는 자원
+  	-->
 	<h1>나는 정적자원</h1>
 	
 	<!-- 
@@ -43,6 +48,17 @@
 	</form> 
 
 	<script>
+		/* 
+			console.dir()
+			JavaScript 객체를 구조적으로 출력하는 함수
+			주로 DOM 요소나 객체의 속성들을 트리 형태로 보여줌
+			
+			getElementById()
+			HTML 문서에서 지정된 id를 가진 요소를 찾는 메서드
+			
+			→ id="tn"을 가진 HTML 요소를 찾고, 
+			그 요소의 모든 속성 및 내용을 콘솔에서 보기 쉽게 출력하는 역할
+		*/
 		console.dir(document.getElementById('#tn'));
 	</script>
 	
@@ -60,14 +76,7 @@
 		이름: <br>
 		<input type="text" placeholder="이름을 입력하세요" name="userName"/> <br><br>
 		
-		
 		<button type="submit">회원가입</button>
 	</form>
-	
-	
-	
-	
-	
-	
 </body>
 </html>
