@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	h1 {
+		color: orangered; 
+		text-align: center; 
+		font-size: 80px;
+		width: 700px;
+		height: 360px;
+		border: 1px dotted lightpink;
+		margin: auto;
+		line-height: 360px;
+	}
+</style>
+</head>
+<body>
+	<h1>하하호호흐흐히히</h1>
+</body>
+</html>
