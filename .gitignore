@@ -2,3 +2,5 @@ dev/
 JDBC/.metadata
 **/Servers/**
 /.metadata/
+.metadata
+.metadata/**
