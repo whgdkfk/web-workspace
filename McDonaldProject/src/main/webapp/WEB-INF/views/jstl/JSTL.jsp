@@ -132,7 +132,7 @@
 	<h3>회원목록</h3>
 	
 	<!--  
-		caption, 표 제목
+		caption 표 제목
 		thead, tbody, tfoot 표의 구조
 		tr 행
 		th, td 

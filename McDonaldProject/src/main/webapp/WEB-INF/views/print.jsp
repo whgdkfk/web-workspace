@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <!-- request.getAttribute() 메서드의 반환값: Object -->   
 <%
 	String brand = (String)request.getAttribute("brand");
 %>    
@@ -77,8 +78,8 @@
 	<p>
 		big이 small보다 작니? : ${ big < small } 또는 ${ big lt small } <br>
 		big이 small보다 크니? : ${ big > small } 또는 ${ big gt small } <br>
-		big이 small보다 작거나 같니? : ${ big le small } <br>
-		big이 small보다 크거나 같니? : ${ big ge small } <br>
+		big이 small보다 작거나 같니? : ${ big <= small } 또는 ${ big le small } <br>
+		big이 small보다 크거나 같니? : ${ big >= small } 또는 ${ big ge small } <br>
 	</p>
 	
 	<h4>동등 비교</h4>
