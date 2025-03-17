@@ -21,7 +21,7 @@
 			 )
 	</insert>
 	
-	<sql id="boardcolumns">
+	<sql id="boardColumns">
 		SELECT
 				BOARD_NO boardNo
 			  , BOARD_CATEGORY boardCategory
@@ -65,7 +65,7 @@
 	<select id="findByBoardNo"
 			parameterType="_int"
 			resultType="boardDTO">
-		<include refid="boardcolumns"/>
+		<include refid="boardColumns"/>
 				, BOARD_CONTENT boardContent
 		  FROM
 		  		KH_BOARD

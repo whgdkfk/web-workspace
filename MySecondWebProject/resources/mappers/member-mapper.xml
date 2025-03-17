@@ -58,7 +58,7 @@
 	
 	<select id="checkId"
 			parameterType="String"
-			resultType="int">
+			resultType="_int">
 		SELECT
 				COUNT(*)
 		  FROM

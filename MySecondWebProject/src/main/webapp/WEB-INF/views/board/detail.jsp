@@ -20,46 +20,38 @@
 		<div class="row">
 		  <div class="offset-lg-2 col-lg-8">
 		    <div class="card">
-		      <div class="card-header text-white" style="background-color: #52b1ff;">${ board.boardNo }</div>
+		      <div class="card-header text-white" style="background-color: #52b1ff;">${board.boardNo}번 게시물 내용</div>
 		      <div class="card-body"> 
 		
 		          <div class="form-group">
-		            <label>${ board.bn }</label><br>
-		            <span>원본게시글 카테고리</span>
+		            <label>카테고리</label><br>
+		            <span>${board.boardCategory }</span>
 		          </div>      
 		        
 		          <div class="form-group">
 		            <label>작성자</label>
-		            <input type="text" class="form-control" name='writer' value="${ board.boardName }" readonly>
+		            <input type="text" class="form-control" name='writer' value="${board.boardWriter }" readonly>
 		          </div>
 		          
 		          <div class="form-group">
 		            <label>제목</label>
-		            <input type="text" class="form-control" name='title' value="${ board.boardTitle }" readonly>
+		            <input type="text" class="form-control" name='title' value="${board.boardTitle }" readonly>
 		          </div>
 		
 		          <div class="form-group">
 		            <label>내용</label>
-		            <textarea class="form-control" rows="5" name='content' readonly style="resize:none;">${ board.boardContent }</textarea>
+		            <textarea class="form-control" rows="5" name='content' readonly style="resize:none;">${board.boardContent }</textarea>
 		          </div>
 		
 		          <div class="form-group">
 		            <label>첨부파일</label>
 
-			            	<!-- 첨부파일은 있을수도있음 -->
-			            	<a 
-			            	download="파일명"
-			            	href="파일경로"
-			            	>파일명</a><br>
-			            	
-			            	<img src="파일경로"/>
-
-
 			            	<!-- 첨부파일은 없을수도있음 -->
 			            	&nbsp;&nbsp;<span>첨부파일이 존재하지 않습니다.</span>
+			            	
 		          </div>
 		         
-		          <a class="btn" href="boards?Page=1"
+		          <a class="btn" href="boards?page=1"
 		             style="background-color: #52b1ff; height: 40px; color: white; border: 0px solid #388E3C; opacity: 0.8"
 		          >목록</a>&nbsp;&nbsp;
 		          
@@ -108,6 +100,10 @@
 	</div>
 	
 	<jsp:include page="../include/footer.jsp" />
-
+	
+	
+	
+	
+	
 </body>
 </html>

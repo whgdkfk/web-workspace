@@ -50,7 +50,7 @@ public class BoardInsertController extends HttpServlet {
 		// 1. 포워딩 처리
 		// 2. sendRedirect
 		session.setAttribute("message", "게시글 작성에 성공했습니다.");
-		response.sendRedirect(request.getContextPath() + "/boards");
+		response.sendRedirect(request.getContextPath() + "/boards?page=1");
 
 	}
 

@@ -11,7 +11,7 @@
 %>
 <!DOCTYPE html>
 <html>
-<head>
+<head>   
 <meta charset="UTF-8">
 <title>응답페이지</title>
 </head>

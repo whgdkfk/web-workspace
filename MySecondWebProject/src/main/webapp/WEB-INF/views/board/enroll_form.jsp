@@ -16,7 +16,6 @@
 <body>
 	<jsp:include page="../include/header.jsp" />
 
-
 	<div class="outer">
 
         <h2 align="center">게시글 작성하기</h2>
@@ -29,7 +28,6 @@
                     <option>공용</option>
 	        	</select>
         	</div>
-			
             <div class="form-group">
                 <label for="usr">제목</label>
                 <input type="text" class="form-control" id="usr" name="title">
