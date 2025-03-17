@@ -3,9 +3,9 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	<!-- typeAliases: 자바 타입 별칭 짓기(타이핑을 줄이기 위해 존재 == 실수를 줄이기 위해) -->
 	<typeAliases>
 		<typeAlias type="com.kh.mfw.member.model.dto.MemberDTO" alias="memberDTO"/>
+		<typeAlias type="com.kh.mfw.board.model.dto.BoardDTO" alias="BoardDTO"/>
 	</typeAliases>
 
 	<!-- 
@@ -44,6 +44,7 @@
 	<mappers>
 		<!-- classes/mappers/member-mapper.xml 등록 -->
 		<mapper resource="/mappers/member-mapper.xml"/>
+		<mapper resource="/mappers/board-mapper.xml"/>
 	</mappers>
 
 </configuration>
